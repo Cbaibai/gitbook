@@ -1,0 +1,33 @@
+{
+	"gitbook": ">=2.0.0",
+	"title": "my first gitbook",
+	"description": "python难点分析",
+	"isbn": "978-3-16-148410-0",
+	"language": "zh-hans",
+    "plugins": ["disqus", "github", "emphasize", "splitter", "tbfed-pagefooter"],
+    "pluginsConfig": {
+    	"disqus": {
+    		"shortName": "disqus"
+    	},
+	    "github": {
+	        "url": "https://github.com/cbaibai"
+	    },
+	    "tbfed-pagefooter": {
+	        "copyright":"Copyright &copy baibainote.pro 2018",
+	        "modify_label": "该文件修订时间：",
+	        "modify_format": "YYYY-MM-DD HH:mm:ss"
+	    }
+    },
+    "links" : {
+	    "sidebar" : {
+	        "Home" : "http://baibainote.pro"
+	    }
+	},
+	"styles": {
+	    "website": "styles/website.css",
+	    "ebook": "styles/ebook.css",
+	    "pdf": "styles/pdf.css",
+	    "mobi": "styles/mobi.css",
+	    "epub": "styles/epub.css"
+	}
+}

@@ -1,0 +1,539 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>python异常 · my first gitbook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="python输入与输出.html" />
+    
+    
+    <link rel="prev" href="python条件控制与循环.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://baibainote.pro" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="python常用标准库概览.html">
+            
+                <a href="python常用标准库概览.html">
+            
+                    
+                    python常用标准库概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="python迭代器.html">
+            
+                <a href="python迭代器.html">
+            
+                    
+                    python迭代器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    [python数据结构(python数据结构.md)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="python条件控制与循环.html">
+            
+                <a href="python条件控制与循环.html">
+            
+                    
+                    python条件控制与循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="python异常.html">
+            
+                <a href="python异常.html">
+            
+                    
+                    python异常
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="python输入与输出.html">
+            
+                <a href="python输入与输出.html">
+            
+                    
+                    python输入与输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="python模块.html">
+            
+                <a href="python模块.html">
+            
+                    
+                    python模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="python面向对象.html">
+            
+                <a href="python面向对象.html">
+            
+                    
+                    python面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >python异常</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <font color="#906060" size="2">
+&#x2003;&#x2003;&#x5373;&#x4FBF;Python&#x7A0B;&#x5E8F;&#x7684;&#x8BED;&#x6CD5;&#x662F;&#x6B63;&#x786E;&#x7684;,&#x5728;&#x8FD0;&#x884C;&#x5B83;&#x7684;&#x65F6;&#x5019;,&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x9519;&#x8BEF;,&#x8FD0;&#x884C;&#x671F;&#x68C0;&#x6D4B;&#x5230;&#x7684;&#x9519;&#x8BEF;&#x88AB;&#x79F0;&#x4E3A;&#x5F02;&#x5E38;.<br>
+&#x2003;&#x2003;&#x5927;&#x591A;&#x6570;&#x7684;&#x5F02;&#x5E38;&#x90FD;&#x4E0D;&#x4F1A;&#x88AB;&#x7A0B;&#x5E8F;&#x5904;&#x7406;,&#x90FD;&#x4EE5;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x7684;&#x5F62;&#x5F0F;&#x5C55;&#x73B0;&#x51FA;&#x6765;
+</font>
+
+<pre><code> except (RuntimeError, TypeError, NameError):
+ #&#x4E00;&#x4E2A;except&#x540C;&#x65F6;&#x5904;&#x7406;&#x591A;&#x4E2A;&#x5F02;&#x5E38;
+        pass
+#&#x591A;&#x4E2A;&#x5F02;&#x5E38;&#x53EF;&#x4EE5;&#x653E;&#x5728;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;&#x91CC;
+</code></pre><pre><code>import sys
+
+try:
+#&#x4E00;&#x4E2A;try&#x53EF;&#x4EE5;&#x5BF9;&#x5E94;&#x591A;&#x4E2A;except&#x5B50;&#x53E5;
+    f = open(&apos;myfile.txt&apos;)
+    s = f.readline()
+    i = int(s.strip())
+except OSError as err:
+    print(&quot;OS error: {0}&quot;.format(err))
+except ValueError:
+    print(&quot;Could not convert data to an integer.&quot;)
+except:
+#&#x672A;&#x88AB;&#x4E0A;&#x8FF0;&#x6355;&#x83B7;&#x7684;&#x5F02;&#x5E38;&#x90FD;&#x4F1A;&#x5728;&#x8FD9;&#x91CC;&#x88AB;&#x5904;&#x7406;,&#x5373;&#x9ED8;&#x8BA4;&#x901A;&#x7528;&#x7684;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x65B9;&#x5F0F;
+    print(&quot;Unexpected error:&quot;, sys.exc_info()[0])
+    raise
+</code></pre><p><strong>&#x5F02;&#x5E38;else&#x5B50;&#x53E5;</strong></p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> sys
+
+<span class="hljs-keyword">for</span> arg <span class="hljs-keyword">in</span> sys.argv[<span class="hljs-number">1</span>:]:
+    <span class="hljs-keyword">try</span>:
+        f = open(arg, <span class="hljs-string">&apos;r&apos;</span>)
+    <span class="hljs-keyword">except</span> IOError:
+<span class="hljs-comment">#&#x6355;&#x83B7;&#x5F02;&#x5E38;&#x5E76;&#x5904;&#x7406;</span>
+        print(<span class="hljs-string">&apos;cannot open&apos;</span>, arg)
+    <span class="hljs-keyword">else</span>:
+<span class="hljs-comment">#&#x5F53;&#x4E0A;&#x8FF0;except&#x6240;&#x8FF0;&#x6240;&#x6709;&#x5F02;&#x5E38;&#x90FD;&#x672A;&#x53D1;&#x751F;&#x65F6;,&#x6267;&#x884C;&#x8BE5;else&#x8BED;&#x53E5;</span>
+        print(arg, <span class="hljs-string">&apos;has&apos;</span>, len(f.readlines()), <span class="hljs-string">&apos;lines&apos;</span>)
+        f.close()
+</code></pre>
+<p><strong>&#x629B;&#x51FA;&#x5F02;&#x5E38;</strong></p>
+<pre><code class="lang-python">&gt;&gt;&gt; try:
+        raise NameError(&apos;HiThere&apos;)
+#raise(&#x4E0D;&#x662F;throw)&#x552F;&#x4E00;&#x7684;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x4E86;&#x8981;&#x88AB;&#x629B;&#x51FA;&#x7684;&#x5F02;&#x5E38;,&#x5B83;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x6216;&#x76F4;&#x63A5;&#x662F;&#x5F02;&#x5E38;&#x7C7B;(&#x4E5F;&#x5C31;&#x662F; Exception&#x7684;&#x5B50;&#x7C7B;)
+    except NameError:
+        print(&apos;An exception flew by!&apos;)
+        raise
+#&#x518D;&#x6B21;&#x629B;&#x51FA;&#x5F02;&#x5E38;
+
+An exception flew by!
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 2, in ?
+NameError: HiThere
+</code></pre>
+<p><strong>&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;</strong></p>
+<pre><code>&gt;&gt;&gt; class MyError(Exception):
+        def __init__(self, value):
+            self.value = value
+        def __str__(self):
+            return repr(self.value)
+
+&gt;&gt;&gt; try:
+        raise MyError(2*2)
+    except MyError as e:
+        print(&apos;My exception occurred, value:&apos;, e.value)
+
+My exception occurred, value: 4
+&gt;&gt;&gt; raise MyError(&apos;oops!&apos;)
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in ?
+__main__.MyError: &apos;oops!&apos;
+#&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;,&#x7C7B;Exception&#x9ED8;&#x8BA4;&#x7684; __init__()&#x88AB;&#x8986;&#x76D6;
+</code></pre><pre><code>#&#x5F53;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x6709;&#x53EF;&#x80FD;&#x629B;&#x51FA;&#x591A;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x5F02;&#x5E38;&#x65F6;,&#x4E00;&#x79CD;&#x901A;&#x5E38;&#x7684;&#x505A;&#x6CD5;&#x662F;&#x4E3A;&#x8FD9;&#x4E2A;&#x5305;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x57FA;&#x7840;&#x5F02;&#x5E38;&#x7C7B;,&#x7136;&#x540E;&#x57FA;&#x4E8E;&#x8FD9;&#x4E2A;&#x57FA;&#x7840;&#x7C7B;&#x4E3A;&#x4E0D;&#x540C;&#x7684;&#x9519;&#x8BEF;&#x60C5;&#x51B5;&#x521B;&#x5EFA;&#x4E0D;&#x540C;&#x7684;&#x5B50;&#x7C7B;
+class Error(Exception):
+    &quot;&quot;&quot;Base class for exceptions in this module.&quot;&quot;&quot;
+    pass
+
+class InputError(Error):
+    &quot;&quot;&quot;Exception raised for errors in the input.
+
+    Attributes:
+        expression -- input expression in which the error occurred
+        message -- explanation of the error
+    &quot;&quot;&quot;
+
+    def __init__(self, expression, message):
+        self.expression = expression
+        self.message = message
+
+class TransitionError(Error):
+    &quot;&quot;&quot;Raised when an operation attempts a state transition that&apos;s not
+    allowed.
+
+    Attributes:
+        previous -- state at beginning of transition
+        next -- attempted new state
+        message -- explanation of why the specific transition is not allowed
+    &quot;&quot;&quot;
+
+    def __init__(self, previous, next, message):
+        self.previous = previous
+        self.next = next
+        self.message = message
+#&#x5927;&#x591A;&#x6570;&#x7684;&#x5F02;&#x5E38;&#x7684;&#x540D;&#x5B57;&#x90FD;&#x4EE5;&quot;Error&quot;&#x7ED3;&#x5C3E;,&#x5C31;&#x8DDF;&#x6807;&#x51C6;&#x7684;&#x5F02;&#x5E38;&#x547D;&#x540D;&#x4E00;&#x6837;
+</code></pre><p><strong>&#x5B9A;&#x4E49;&#x6E05;&#x7406;&#x884C;&#x4E3A;</strong></p>
+<pre><code>&gt;&gt;&gt; try:
+        raise KeyboardInterrupt
+    finally:
+#&#x65E0;&#x8BBA;&#x5728;&#x4EFB;&#x4F55;&#x60C5;&#x51B5;&#x4E0B;&#x90FD;&#x4F1A;&#x6267;&#x884C;finally&#x6240;&#x6307;&#x7684;&#x6E05;&#x7406;&#x884C;&#x4E3A;(&#x4E0D;&#x7BA1;try&#x5B50;&#x53E5;&#x91CC;&#x9762;&#x6709;&#x6CA1;&#x6709;&#x53D1;&#x751F;&#x5F02;&#x5E38;,finally&#x5B50;&#x53E5;&#x90FD;&#x4F1A;&#x6267;&#x884C;)
+        print(&apos;Goodbye, world!&apos;)
+
+Goodbye, world!
+KeyboardInterrupt
+</code></pre><pre><code>&gt;&gt;&gt; def divide(x, y):
+        try:
+            result = x / y
+        except ZeroDivisionError:
+            print(&quot;division by zero!&quot;)
+        else:
+            print(&quot;result is&quot;, result)
+        finally:
+            print(&quot;executing finally clause&quot;)
+
+&gt;&gt;&gt; divide(2, 1)
+result is 2.0
+executing finally clause
+&gt;&gt;&gt; divide(2, 0)
+division by zero!
+executing finally clause
+&gt;&gt;&gt; divide(&quot;2&quot;, &quot;1&quot;)
+executing finally clause
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in ?
+  File &quot;&lt;stdin&gt;&quot;, line 3, in divide
+TypeError: unsupported operand type(s) for /: &apos;str&apos; and &apos;str&apos;
+</code></pre><p><strong>&#x9884;&#x5B9A;&#x4E49;&#x7684;&#x6E05;&#x7406;&#x884C;&#x4E3A;</strong></p>
+<font color="#409090" size="2">
+&#x4E00;&#x4E9B;&#x5BF9;&#x8C61;&#x5B9A;&#x4E49;&#x4E86;&#x6807;&#x51C6;&#x7684;&#x6E05;&#x7406;&#x884C;&#x4E3A;,&#x65E0;&#x8BBA;&#x7CFB;&#x7EDF;&#x662F;&#x5426;&#x6210;&#x529F;&#x7684;&#x4F7F;&#x7528;&#x4E86;&#x5B83;,&#x4E00;&#x65E6;&#x4E0D;&#x9700;&#x8981;&#x5B83;&#x4E86;,&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x6807;&#x51C6;&#x7684;&#x6E05;&#x7406;&#x884C;&#x4E3A;&#x5C31;&#x4F1A;&#x6267;&#x884C;
+</font>
+
+<pre><code class="lang-python"><span class="hljs-comment">#&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;,&#x7136;&#x540E;&#x628A;&#x5185;&#x5BB9;&#x6253;&#x5370;&#x5230;&#x5C4F;&#x5E55;&#x4E0A;</span>
+<span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> open(<span class="hljs-string">&quot;myfile.txt&quot;</span>):
+    print(line, end=<span class="hljs-string">&quot;&quot;</span>)
+</code></pre>
+<pre><code>#&#x5C31;&#x7B97;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#x4E2D;&#x51FA;&#x95EE;&#x9898;&#x4E86;,&#x6587;&#x4EF6;&#x6D41;f&#x4E5F;&#x4F1A;&#x6B63;&#x5E38;&#x5173;&#x95ED;
+with open(&quot;myfile.txt&quot;) as f:
+    for line in f:
+        print(line, end=&quot;&quot;)
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#xA9; baibainote.pro 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-12-05 18:47:22
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="python条件控制与循环.html" class="navigation navigation-prev " aria-label="Previous page: python条件控制与循环">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="python输入与输出.html" class="navigation navigation-next " aria-label="Next page: python输入与输出">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"python异常","level":"2.1","depth":1,"next":{"title":"python输入与输出","level":"2.1.1","depth":2,"path":"python输入与输出.md","ref":"python输入与输出.md","articles":[]},"previous":{"title":"python条件控制与循环","level":"1.3.2","depth":2,"path":"python条件控制与循环.md","ref":"python条件控制与循环.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","github","emphasize","splitter","tbfed-pagefooter"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy baibainote.pro 2018","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"disqus"},"emphasize":{},"github":{"url":"https://github.com/cbaibai"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"my first gitbook","language":"zh-hans","links":{"sidebar":{"Home":"http://baibainote.pro"}},"gitbook":">=2.0.0","description":"python难点分析"},"file":{"path":"python异常.md","mtime":"2018-12-05T10:47:22.572Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-06T14:33:13.415Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -14,3 +14,10 @@
 
 **配置好book.json内的plugins选项后，要使用gitbook install安装插件**
 
+Gitbook默认带有5个插件： 
+* highlight 
+* search 
+* sharing 
+* font-settings 
+* livereload
+

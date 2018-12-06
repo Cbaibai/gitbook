@@ -1,0 +1,517 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>python输入与输出 · my first gitbook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="python模块.html" />
+    
+    
+    <link rel="prev" href="python异常.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://baibainote.pro" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="python常用标准库概览.html">
+            
+                <a href="python常用标准库概览.html">
+            
+                    
+                    python常用标准库概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="python迭代器.html">
+            
+                <a href="python迭代器.html">
+            
+                    
+                    python迭代器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    [python数据结构(python数据结构.md)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="python条件控制与循环.html">
+            
+                <a href="python条件控制与循环.html">
+            
+                    
+                    python条件控制与循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="python异常.html">
+            
+                <a href="python异常.html">
+            
+                    
+                    python异常
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1.1" data-path="python输入与输出.html">
+            
+                <a href="python输入与输出.html">
+            
+                    
+                    python输入与输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="python模块.html">
+            
+                <a href="python模块.html">
+            
+                    
+                    python模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="python面向对象.html">
+            
+                <a href="python面向对象.html">
+            
+                    
+                    python面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >python输入与输出</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <font color="#906060" size="2">
+str() &#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x6613;&#x8BFB;&#x7684;&#x8868;&#x8FBE;&#x5F62;&#x5F0F;<br>
+repr() &#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x89E3;&#x91CA;&#x5668;&#x6613;&#x8BFB;&#x7684;&#x8868;&#x8FBE;&#x5F62;&#x5F0F;
+</font>
+
+<hr>
+<pre><code>&gt;&gt;&gt; s = &apos;Hello, world.&apos;
+&gt;&gt;&gt; str(s)
+&apos;Hello, world.&apos;
+&gt;&gt;&gt; repr(s)
+&quot;&apos;Hello, world.&apos;&quot;
+&gt;&gt;&gt; str(1/7)
+&apos;0.14285714285714285&apos;
+&gt;&gt;&gt; x = 10 * 3.25
+&gt;&gt;&gt; y = 200 * 200
+&gt;&gt;&gt; s = &apos;The value of x is &apos; + repr(x) + &apos;, and y is &apos; + repr(y) + &apos;...&apos;
+&gt;&gt;&gt; print(s)
+The value of x is 32.5, and y is 40000...
+&gt;&gt;&gt; #  repr() &#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x8F6C;&#x4E49;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x7279;&#x6B8A;&#x5B57;&#x7B26;
+... hello = &apos;hello, world\n&apos;
+&gt;&gt;&gt; hellos = repr(hello)
+&gt;&gt;&gt; print(hellos)
+&apos;hello, world\n&apos;
+&gt;&gt;&gt; # repr() &#x7684;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x662F; Python &#x7684;&#x4EFB;&#x4F55;&#x5BF9;&#x8C61;
+... repr((x, y, (&apos;spam&apos;, &apos;eggs&apos;)))
+&quot;(32.5, 40000, (&apos;spam&apos;, &apos;eggs&apos;))&quot;
+</code></pre><pre><code>&gt;&gt;&gt; for x in range(1, 11):
+...     print(repr(x).rjust(2), repr(x*x).rjust(3), end=&apos; &apos;)
+...     # &#x6CE8;&#x610F;&#x524D;&#x4E00;&#x884C; &apos;end&apos; &#x7684;&#x4F7F;&#x7528;
+...     print(repr(x*x*x).rjust(4))
+...
+ 1   1    1
+ 2   4    8
+ 3   9   27
+ 4  16   64
+ 5  25  125
+ 6  36  216
+ 7  49  343
+ 8  64  512
+ 9  81  729
+10 100 1000
+
+&gt;&gt;&gt; for x in range(1, 11):
+...     print(&apos;{0:2d} {1:3d} {2:4d}&apos;.format(x, x*x, x*x*x))
+...
+ 1   1    1
+ 2   4    8
+ 3   9   27
+ 4  16   64
+ 5  25  125
+ 6  36  216
+ 7  49  343
+ 8  64  512
+ 9  81  729
+10 100 1000
+</code></pre><font color="#609090" size="2">
+&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x8C61;&#x7684; rjust() &#x65B9;&#x6CD5;, &#x5B83;&#x53EF;&#x4EE5;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x9760;&#x53F3;, &#x5E76;&#x5728;&#x5DE6;&#x8FB9;&#x586B;&#x5145;&#x7A7A;&#x683C;<br>
+&#x8FD8;&#x6709;&#x7C7B;&#x4F3C;&#x7684;&#x65B9;&#x6CD5;,&#x5982; ljust() &#x548C; center()<br> &#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x5E76;&#x4E0D;&#x4F1A;&#x5199;&#x4EFB;&#x4F55;&#x4E1C;&#x897F;, &#x5B83;&#x4EEC;&#x4EC5;&#x4EC5;&#x8FD4;&#x56DE;&#x65B0;&#x7684;&#x5B57;&#x7B26;&#x4E32;
+&#x53E6;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5; zfill(), &#x5B83;&#x4F1A;&#x5728;&#x6570;&#x5B57;&#x7684;&#x5DE6;&#x8FB9;&#x586B;&#x5145; 0&#xFF0C;
+</font>
+
+<pre><code>#zfill()&#x4F7F;&#x7528;
+&gt;&gt;&gt; &apos;12&apos;.zfill(5)
+&apos;00012&apos;
+&gt;&gt;&gt; &apos;-3.14&apos;.zfill(7)
+&apos;-003.14&apos;
+&gt;&gt;&gt; &apos;3.14159265359&apos;.zfill(5)
+&apos;3.14159265359&apos;
+</code></pre><pre><code class="lang-python"><span class="hljs-comment">#str.format()&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">&apos;We are the {} who say &quot;{}!&quot;&apos;</span>.format(<span class="hljs-string">&apos;knights&apos;</span>, <span class="hljs-string">&apos;Ni&apos;</span>))
+We are the knights who say <span class="hljs-string">&quot;Ni!&quot;</span>
+
+<span class="hljs-comment">#&#x62EC;&#x53F7;&#x53CA;&#x5176;&#x91CC;&#x9762;&#x7684;&#x5B57;&#x7B26; (&#x79F0;&#x4F5C;&#x683C;&#x5F0F;&#x5316;&#x5B57;&#x6BB5;) &#x5C06;&#x4F1A;&#x88AB; format() &#x4E2D;&#x7684;&#x53C2;&#x6570;&#x66FF;&#x6362;</span>
+<span class="hljs-comment">#&#x5728;&#x62EC;&#x53F7;&#x4E2D;&#x7684;&#x6570;&#x5B57;&#x7528;&#x4E8E;&#x6307;&#x5411;&#x4F20;&#x5165;&#x5BF9;&#x8C61;&#x5728; format() &#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x987A;&#x5E8F;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">&apos;{0} and {1}&apos;</span>.format(<span class="hljs-string">&apos;spam&apos;</span>, <span class="hljs-string">&apos;eggs&apos;</span>))
+spam <span class="hljs-keyword">and</span> eggs
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">&apos;{1} and {0}&apos;</span>.format(<span class="hljs-string">&apos;spam&apos;</span>, <span class="hljs-string">&apos;eggs&apos;</span>))
+eggs <span class="hljs-keyword">and</span> spam
+
+<span class="hljs-comment">#&#x5982;&#x679C;&#x5728; format() &#x4E2D;&#x4F7F;&#x7528;&#x4E86;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;, &#x90A3;&#x4E48;&#x5B83;&#x4EEC;&#x7684;&#x503C;&#x4F1A;&#x6307;&#x5411;&#x4F7F;&#x7528;&#x8BE5;&#x540D;&#x5B57;&#x7684;&#x53C2;&#x6570;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">&apos;This {food} is {adjective}.&apos;</span>.format(
+<span class="hljs-meta">... </span>      food=<span class="hljs-string">&apos;spam&apos;</span>, adjective=<span class="hljs-string">&apos;absolutely horrible&apos;</span>))
+This spam <span class="hljs-keyword">is</span> absolutely horrible
+
+<span class="hljs-comment">#&#x4F4D;&#x7F6E;&#x53CA;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x7684;&#x7ED3;&#x5408;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">&apos;The story of {0}, {1}, and {other}.&apos;</span>.format(<span class="hljs-string">&apos;Bill&apos;</span>, <span class="hljs-string">&apos;Manfred&apos;</span>,other=<span class="hljs-string">&apos;Georg&apos;</span>))
+The story of Bill, Manfred, <span class="hljs-keyword">and</span> Georg.
+
+<span class="hljs-comment">#&apos;!a&apos; (&#x4F7F;&#x7528; ascii()),&apos;!s&apos; (&#x4F7F;&#x7528; str()) &#x548C; &apos;!r&apos; (&#x4F7F;&#x7528; repr()) &#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5728;&#x683C;&#x5F0F;&#x5316;&#x67D0;&#x4E2A;&#x503C;&#x4E4B;&#x524D;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x8F6C;&#x5316;:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> math
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">&apos;The value of PI is approximately {}.&apos;</span>.format(math.pi))
+The value of PI <span class="hljs-keyword">is</span> approximately <span class="hljs-number">3.14159265359</span>.
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">&apos;The value of PI is approximately {!r}.&apos;</span>.format(math.pi))
+The value of PI <span class="hljs-keyword">is</span> approximately <span class="hljs-number">3.141592653589793</span>.
+
+<span class="hljs-comment">#&#x53EF;&#x9009;&#x9879; &apos;:&apos; &#x548C;&#x683C;&#x5F0F;&#x6807;&#x8BC6;&#x7B26;&#x53EF;&#x4EE5;&#x8DDF;&#x7740;&#x5B57;&#x6BB5;&#x540D;&#x3002; &#x8FD9;&#x5C31;&#x5141;&#x8BB8;&#x5BF9;&#x503C;&#x8FDB;&#x884C;&#x66F4;&#x597D;&#x7684;&#x683C;&#x5F0F;&#x5316;</span>
+<span class="hljs-comment">#&#x5C06; Pi &#x4FDD;&#x7559;&#x5230;&#x5C0F;&#x6570;&#x70B9;&#x540E;&#x4E09;&#x4F4D;&#xFF1A;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> math
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">&apos;The value of PI is approximately {0:.3f}.&apos;</span>.format(math.pi))
+The value of PI <span class="hljs-keyword">is</span> approximately <span class="hljs-number">3.142</span>.
+
+<span class="hljs-comment">#&#x5728; &apos;:&apos; &#x540E;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x6574;&#x6570;, &#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x8BE5;&#x57DF;&#x81F3;&#x5C11;&#x6709;&#x8FD9;&#x4E48;&#x591A;&#x7684;&#x5BBD;&#x5EA6;,&#x7528;&#x6765;&#x6253;&#x5370;&#x8868;&#x683C;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>table = {<span class="hljs-string">&apos;Sjoerd&apos;</span>: <span class="hljs-number">4127</span>, <span class="hljs-string">&apos;Jack&apos;</span>: <span class="hljs-number">4098</span>, <span class="hljs-string">&apos;Dcab&apos;</span>: <span class="hljs-number">7678</span>}
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">for</span> name, phone <span class="hljs-keyword">in</span> table.items():
+<span class="hljs-meta">... </span>    print(<span class="hljs-string">&apos;{0:10} ==&gt; {1:10d}&apos;</span>.format(name, phone))
+...
+Jack       ==&gt;       <span class="hljs-number">4098</span>
+Dcab       ==&gt;       <span class="hljs-number">7678</span>
+Sjoerd     ==&gt;       <span class="hljs-number">4127</span>
+
+<span class="hljs-comment">#&#x5982;&#x679C;&#x4F60;&#x6709;&#x4E00;&#x4E2A;&#x5F88;&#x957F;&#x7684;&#x683C;&#x5F0F;&#x5316;&#x5B57;&#x7B26;&#x4E32;, &#x800C;&#x4F60;&#x4E0D;&#x60F3;&#x5C06;&#x5B83;&#x4EEC;&#x5206;&#x5F00;, &#x90A3;&#x4E48;&#x5728;&#x683C;&#x5F0F;&#x5316;&#x65F6;&#x901A;&#x8FC7;&#x53D8;&#x91CF;&#x540D;&#x800C;&#x975E;&#x4F4D;&#x7F6E;&#x4F1A;&#x662F;&#x5F88;&#x597D;&#x7684;&#x4E8B;&#x60C5;.&#x6700;&#x7B80;&#x5355;&#x7684;&#x5C31;&#x662F;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x5B57;&#x5178;, &#x7136;&#x540E;&#x4F7F;&#x7528;&#x65B9;&#x62EC;&#x53F7; &apos;[]&apos; &#x6765;&#x8BBF;&#x95EE;&#x952E;&#x503C; :</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>table = {<span class="hljs-string">&apos;Sjoerd&apos;</span>: <span class="hljs-number">4127</span>, <span class="hljs-string">&apos;Jack&apos;</span>: <span class="hljs-number">4098</span>, <span class="hljs-string">&apos;Dcab&apos;</span>: <span class="hljs-number">8637678</span>}
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">&apos;Jack: {0[Jack]:d}; Sjoerd: {0[Sjoerd]:d}; &apos;</span>
+          <span class="hljs-string">&apos;Dcab: {0[Dcab]:d}&apos;</span>.format(table))
+Jack: <span class="hljs-number">4098</span>; Sjoerd: <span class="hljs-number">4127</span>; Dcab: <span class="hljs-number">8637678</span>
+<span class="hljs-comment">#&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728; table &#x53D8;&#x91CF;&#x524D;&#x4F7F;&#x7528; &apos;**&apos; &#x6765;&#x5B9E;&#x73B0;&#x76F8;&#x540C;&#x7684;&#x529F;&#x80FD;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>table = {<span class="hljs-string">&apos;Sjoerd&apos;</span>: <span class="hljs-number">4127</span>, <span class="hljs-string">&apos;Jack&apos;</span>: <span class="hljs-number">4098</span>, <span class="hljs-string">&apos;Dcab&apos;</span>: <span class="hljs-number">8637678</span>}
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">&apos;Jack: {Jack:d}; Sjoerd: {Sjoerd:d}; Dcab: {Dcab:d}&apos;</span>.format(**table))
+Jack: <span class="hljs-number">4098</span>; Sjoerd: <span class="hljs-number">4127</span>; Dcab: <span class="hljs-number">8637678</span>
+</code></pre>
+<p><strong>&#x65E7;&#x5F0F;&#x5B57;&#x7B26;&#x4E32;&#x683C;&#x5F0F;&#x5316;</strong></p>
+<pre><code>&gt;&gt;&gt; import math
+&gt;&gt;&gt; print(&apos;The value of PI is approximately %5.3f.&apos; % math.pi)
+The value of PI is approximately 3.142.
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#xA9; baibainote.pro 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-12-05 18:47:17
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="python异常.html" class="navigation navigation-prev " aria-label="Previous page: python异常">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="python模块.html" class="navigation navigation-next " aria-label="Next page: python模块">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"python输入与输出","level":"2.1.1","depth":2,"next":{"title":"python模块","level":"2.1.2","depth":2,"path":"python模块.md","ref":"python模块.md","articles":[]},"previous":{"title":"python异常","level":"2.1","depth":1,"path":"python异常.md","ref":"python异常.md","articles":[{"title":"python输入与输出","level":"2.1.1","depth":2,"path":"python输入与输出.md","ref":"python输入与输出.md","articles":[]},{"title":"python模块","level":"2.1.2","depth":2,"path":"python模块.md","ref":"python模块.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["disqus","github","emphasize","splitter","tbfed-pagefooter"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy baibainote.pro 2018","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"disqus"},"emphasize":{},"github":{"url":"https://github.com/cbaibai"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"my first gitbook","language":"zh-hans","links":{"sidebar":{"Home":"http://baibainote.pro"}},"gitbook":">=2.0.0","description":"python难点分析"},"file":{"path":"python输入与输出.md","mtime":"2018-12-05T10:47:17.695Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-06T14:33:13.415Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

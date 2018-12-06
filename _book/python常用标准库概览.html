@@ -1,0 +1,504 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>python常用标准库概览 · my first gitbook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="python迭代器.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://baibainote.pro" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="python常用标准库概览.html">
+            
+                <a href="python常用标准库概览.html">
+            
+                    
+                    python常用标准库概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="python迭代器.html">
+            
+                <a href="python迭代器.html">
+            
+                    
+                    python迭代器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    [python数据结构(python数据结构.md)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="python条件控制与循环.html">
+            
+                <a href="python条件控制与循环.html">
+            
+                    
+                    python条件控制与循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="python异常.html">
+            
+                <a href="python异常.html">
+            
+                    
+                    python异常
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="python输入与输出.html">
+            
+                <a href="python输入与输出.html">
+            
+                    
+                    python输入与输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="python模块.html">
+            
+                <a href="python模块.html">
+            
+                    
+                    python模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="python面向对象.html">
+            
+                <a href="python面向对象.html">
+            
+                    
+                    python面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >python常用标准库概览</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>[toc]</p>
+<h1 id="os"><font color="#904060" size="3">OS</font></h1>
+<pre><code>#os&#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x4E86;&#x4E0D;&#x5C11;&#x4E0E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x76F8;&#x5173;&#x8054;&#x7684;&#x51FD;&#x6570;
+&gt;&gt;&gt; import os
+&gt;&gt;&gt; os.getcwd()#&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;
+&apos;C:\\Python34&apos;
+&gt;&gt;&gt; os.chdir(&apos;/server/accesslogs&apos;)   # &#x4FEE;&#x6539;&#x5F53;&#x524D;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;
+&gt;&gt;&gt; os.system(&apos;mkdir today&apos;)   # &#x6267;&#x884C;&#x7CFB;&#x7EDF;&#x547D;&#x4EE4; mkdir 
+0
+--------------------------
+&gt;&gt;&gt; import os
+&gt;&gt;&gt; dir(os)
+&lt;returns a list of all module functions&gt;
+&gt;&gt;&gt; help(os)
+&lt;returns an extensive manual page created from the module&apos;s docstrings&gt;
+
+#&#x5728;&#x4F7F;&#x7528;os&#x8FD9;&#x6837;&#x7684;&#x5927;&#x578B;&#x6A21;&#x5757;&#x65F6;&#x5185;&#x7F6E;&#x7684;dir()&#x548C;help()&#x51FD;&#x6570;&#x975E;&#x5E38;&#x6709;&#x7528;
+</code></pre><h1 id="glob"><font color="#904060" size="3">glob</font></h1>
+<pre><code>#&#x6587;&#x4EF6;&#x901A;&#x914D;&#x7B26;
+#glob&#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x4ECE;&#x76EE;&#x5F55;&#x901A;&#x914D;&#x7B26;&#x641C;&#x7D22;&#x4E2D;&#x751F;&#x6210;&#x6587;&#x4EF6;&#x5217;&#x8868;
+&gt;&gt;&gt; import glob
+&gt;&gt;&gt; glob.glob(&apos;*.py&apos;)
+[&apos;primes.py&apos;, &apos;random.py&apos;, &apos;quote.py&apos;]
+</code></pre><h1 id="sys"><font color="#904060" size="3">sys</font></h1>
+<pre><code>#&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;
+#&#x901A;&#x7528;&#x5DE5;&#x5177;&#x811A;&#x672C;&#x7ECF;&#x5E38;&#x8C03;&#x7528;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;,&#x8FD9;&#x4E9B;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x4EE5;&#x94FE;&#x8868;&#x5F62;&#x5F0F;&#x5B58;&#x50A8;&#x4E8E;sys&#x6A21;&#x5757;&#x7684;argv&#x53D8;&#x91CF;
+&gt;&gt;&gt; import sys
+&gt;&gt;&gt; print(sys.argv)
+[&apos;demo.py&apos;, &apos;one&apos;, &apos;two&apos;, &apos;three&apos;]
+</code></pre><pre><code>#&#x9519;&#x8BEF;&#x8F93;&#x51FA;&#x91CD;&#x5B9A;&#x5411;&#x548C;&#x7A0B;&#x5E8F;&#x7EC8;&#x6B62;
+&gt;&gt;&gt; sys.stderr.write(&apos;Warning, log file not found starting a new one\n&apos;)
+Warning, log file not found starting a new one
+#&#x5373;&#x4F7F;&#x5728;stdout&#x88AB;&#x91CD;&#x5B9A;&#x5411;&#x65F6;,stderr&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x663E;&#x793A;&#x8B66;&#x544A;&#x548C;&#x9519;&#x8BEF;&#x4FE1;&#x606F;
+</code></pre><h1 id="re"><font color="#904060" size="3">re</font></h1>
+<pre><code>#re&#x6A21;&#x5757;&#x4E3A;&#x9AD8;&#x7EA7;&#x5B57;&#x7B26;&#x4E32;&#x5904;&#x7406;&#x63D0;&#x4F9B;&#x4E86;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5DE5;&#x5177;
+&gt;&gt;&gt; import re
+&gt;&gt;&gt; re.findall(r&apos;\bf[a-z]*&apos;, &apos;which foot or hand fell fastest&apos;)
+[&apos;foot&apos;, &apos;fell&apos;, &apos;fastest&apos;]
+&gt;&gt;&gt; re.sub(r&apos;(\b[a-z]+) \1&apos;, r&apos;\1&apos;, &apos;cat in the the hat&apos;)
+&apos;cat in the hat&apos;
+
+#&#x5982;&#x679C;&#x53EA;&#x9700;&#x8981;&#x7B80;&#x5355;&#x7684;&#x529F;&#x80FD;,&#x5E94;&#x8BE5;&#x9996;&#x5148;&#x8003;&#x8651;&#x5B57;&#x7B26;&#x4E32;&#x65B9;&#x6CD5;,&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x975E;&#x5E38;&#x7B80;&#x5355;
+&gt;&gt;&gt; &apos;tea for too&apos;.replace(&apos;too&apos;, &apos;two&apos;)
+&apos;tea for two&apos;
+</code></pre><h1 id="math"><font color="#904060" size="3">math</font></h1>
+<pre><code class="lang-python"><span class="hljs-comment">#math&#x6A21;&#x5757;&#x4E3A;&#x6D6E;&#x70B9;&#x8FD0;&#x7B97;&#x63D0;&#x4F9B;&#x4E86;&#x5BF9;&#x5E95;&#x5C42;C&#x51FD;&#x6570;&#x5E93;&#x7684;&#x8BBF;&#x95EE;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> math
+<span class="hljs-meta">&gt;&gt;&gt; </span>math.cos(math.pi / <span class="hljs-number">4</span>)
+<span class="hljs-number">0.70710678118654757</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>math.log(<span class="hljs-number">1024</span>, <span class="hljs-number">2</span>)
+<span class="hljs-number">10.0</span>
+
+<span class="hljs-comment">#random&#x63D0;&#x4F9B;&#x4E86;&#x751F;&#x6210;&#x968F;&#x673A;&#x6570;&#x7684;&#x5DE5;&#x5177;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> random
+<span class="hljs-meta">&gt;&gt;&gt; </span>random.choice([<span class="hljs-string">&apos;apple&apos;</span>, <span class="hljs-string">&apos;pear&apos;</span>, <span class="hljs-string">&apos;banana&apos;</span>])
+<span class="hljs-string">&apos;apple&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>random.sample(range(<span class="hljs-number">100</span>), <span class="hljs-number">10</span>)   <span class="hljs-comment"># sampling without replacement</span>
+[<span class="hljs-number">30</span>, <span class="hljs-number">83</span>, <span class="hljs-number">16</span>, <span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">81</span>, <span class="hljs-number">41</span>, <span class="hljs-number">50</span>, <span class="hljs-number">18</span>, <span class="hljs-number">33</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>random.random()    <span class="hljs-comment"># random float</span>
+<span class="hljs-number">0.17970987693706186</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>random.randrange(<span class="hljs-number">6</span>)    <span class="hljs-comment"># random integer chosen from range(6)</span>
+<span class="hljs-number">4</span>
+</code></pre>
+<h1 id="zlib"><font color="#904060" size="3">zlib</font></h1>
+<pre><code>&gt;&gt;&gt; import zlib
+&gt;&gt;&gt; s = b&apos;witch which has which witches wrist watch&apos;
+&gt;&gt;&gt; len(s)
+41
+&gt;&gt;&gt; t = zlib.compress(s)
+&gt;&gt;&gt; len(t)
+37
+&gt;&gt;&gt; zlib.decompress(t)
+b&apos;witch which has which witches wrist watch&apos;
+&gt;&gt;&gt; zlib.crc32(s)
+226805979
+</code></pre><h1 id="smtplib"><font color="#904060" size="3">smtplib</font></h1>
+<pre><code>#&#x7528;&#x4E8E;&#x53D1;&#x9001;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x7684;smtplib
+&gt;&gt;&gt; from urllib.request import urlopen
+&gt;&gt;&gt; for line in urlopen(&apos;http://tycho.usno.navy.mil/cgi-bin/timer.pl&apos;):
+...     line = line.decode(&apos;utf-8&apos;)  # Decoding the binary data to text.
+...     if &apos;EST&apos; in line or &apos;EDT&apos; in line:  # look for Eastern Time
+...         print(line)
+
+&lt;BR&gt;Nov. 25, 09:43:32 PM EST
+
+&gt;&gt;&gt; import smtplib
+&gt;&gt;&gt; server = smtplib.SMTP(&apos;localhost&apos;)
+&gt;&gt;&gt; server.sendmail(&apos;soothsayer@example.org&apos;, &apos;jcaesar@example.org&apos;,
+... &quot;&quot;&quot;To: jcaesar@example.org
+... From: soothsayer@example.org
+...
+... Beware the Ides of March.
+... &quot;&quot;&quot;)
+&gt;&gt;&gt; server.quit()
+</code></pre><h1 id="datetime"><font color="#904060" size="3">datetime</font></h1>
+<pre><code class="lang-python"><span class="hljs-comment">#datetime&#x6A21;&#x5757;&#x4E3A;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x5904;&#x7406;&#x540C;&#x65F6;&#x63D0;&#x4F9B;&#x4E86;&#x7B80;&#x5355;&#x548C;&#x590D;&#x6742;&#x7684;&#x65B9;&#x6CD5;</span>
+<span class="hljs-comment">#&#x652F;&#x6301;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x7B97;&#x6CD5;&#x7684;&#x540C;&#x65F6;,&#x5B9E;&#x73B0;&#x7684;&#x91CD;&#x70B9;&#x653E;&#x5728;&#x66F4;&#x6709;&#x6548;&#x7684;&#x5904;&#x7406;&#x548C;&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-comment"># dates are easily constructed and formatted</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> datetime <span class="hljs-keyword">import</span> date
+<span class="hljs-meta">&gt;&gt;&gt; </span>now = date.today()
+<span class="hljs-meta">&gt;&gt;&gt; </span>now
+datetime.date(<span class="hljs-number">2003</span>, <span class="hljs-number">12</span>, <span class="hljs-number">2</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>now.strftime(<span class="hljs-string">&quot;%m-%d-%y. %d %b %Y is a %A on the %d day of %B.&quot;</span>)
+<span class="hljs-string">&apos;12-02-03. 02 Dec 2003 is a Tuesday on the 02 day of December.&apos;</span>
+
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-comment"># dates support calendar arithmetic</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>birthday = date(<span class="hljs-number">1964</span>, <span class="hljs-number">7</span>, <span class="hljs-number">31</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>age = now - birthday
+<span class="hljs-meta">&gt;&gt;&gt; </span>age.days
+<span class="hljs-number">14368</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; baibainote.pro 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-12-05 18:47:09
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="python迭代器.html" class="navigation navigation-next " aria-label="Next page: python迭代器">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"python常用标准库概览","level":"1.2","depth":1,"next":{"title":"python迭代器","level":"1.3","depth":1,"path":"python迭代器.md","ref":"python迭代器.md","articles":[{"title":"[python数据结构(python数据结构.md)","level":"1.3.1","depth":2,"ref":"","articles":[]},{"title":"python条件控制与循环","level":"1.3.2","depth":2,"path":"python条件控制与循环.md","ref":"python条件控制与循环.md","articles":[]}]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","github","emphasize","splitter","tbfed-pagefooter"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy baibainote.pro 2018","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"disqus"},"emphasize":{},"github":{"url":"https://github.com/cbaibai"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"my first gitbook","language":"zh-hans","links":{"sidebar":{"Home":"http://baibainote.pro"}},"gitbook":">=2.0.0","description":"python难点分析"},"file":{"path":"python常用标准库概览.md","mtime":"2018-12-05T10:47:09.910Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-06T14:33:13.415Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
